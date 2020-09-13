@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="semesterProject3.Event">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1200.0">
+         <image>
+            <Image url="@../Images/photo-1484417894907-623942c8ee29.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="336.0" layoutY="186.0" opacity="0.91" prefHeight="434.0" prefWidth="500.0" style="-fx-background-color: #727272;">
+         <children>
+            <TextField fx:id="txtTopic" layoutX="174.0" layoutY="86.0" />
+            <TextField fx:id="txtBuilding" layoutX="174.0" layoutY="141.0" />
+            <TextField fx:id="txtRoom" layoutX="174.0" layoutY="197.0" />
+            <Label layoutX="85.0" layoutY="91.0" text="Topic:" textFill="WHITE" />
+            <Label layoutX="85.0" layoutY="146.0" text="Building:" textFill="WHITE" />
+            <Label layoutX="85.0" layoutY="202.0" text="Room Number:" textFill="WHITE" />
+            <Button fx:id="btnCreateSession" layoutX="201.0" layoutY="359.0" mnemonicParsing="false" onAction="#Event" prefHeight="27.0" prefWidth="107.0" text="Done" textFill="#2cc2f8" />
+            <Label layoutX="85.0" layoutY="256.0" text="Choose Date:" textFill="WHITE" />
+            <TextField fx:id="txtTime" layoutX="174.0" layoutY="310.0" />
+            <Label layoutX="85.0" layoutY="315.0" text="Time:" textFill="WHITE" />
+            <Label layoutX="135.0" layoutY="19.0" text="Creeat Study Session" textFill="#88f286">
+               <font>
+                  <Font name="Orbitron Regular" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDate" layoutX="174.0" layoutY="251.0" promptText="mm-dd-yyyy" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="206.0" fitWidth="241.0" layoutX="457.0" layoutY="-6.0">
+         <image>
+            <Image url="@../Images/logo.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="62.0" layoutY="48.0" mnemonicParsing="false" onAction="#btnBack" text="BACK">
+         <font>
+            <Font name="Orbitron Regular" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblError" layoutX="420.0" layoutY="680.0" prefHeight="38.0" prefWidth="446.0" textFill="#bf3636" visible="false">
+         <font>
+            <Font name="Orbitron Regular" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
