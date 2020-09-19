@@ -10,7 +10,7 @@ public class dbConnection {
 
     String dbName = "semesterProject";
     String user = "root";
-    String password = "iCode0325!";
+    String password = "";
     protected static Connection conn;
     String stmt;
     PreparedStatement statement;
@@ -24,7 +24,7 @@ public class dbConnection {
             System.out.println("Driver loaded");
 
             //Establish Connection
-            conn = DriverManager.getConnection("jdbc:mysql://localhost/semesterProject", "root", "iCode0325");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost/semesterProject", "root", "");
             System.out.println("Database connected");
 
             //Statements
