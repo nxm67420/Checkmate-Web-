@@ -44,7 +44,7 @@ public class LoginController {
             String name = txtUser.getText();
             String pass = txtPass.getText();
 
-            Connection conn =  DriverManager.getConnection("jdbc:mysql://localhost/semesterProject", "root", "iCode0325");
+            Connection conn =  DriverManager.getConnection("jdbc:mysql://localhost/semesterProject", "root", "");
 
             String sql = "SELECT * FROM user WHERE username = ? AND password = ?";
 
