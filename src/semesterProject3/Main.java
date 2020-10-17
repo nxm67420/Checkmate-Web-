@@ -73,7 +73,7 @@ public class Main extends Application {
     //Database Variables
     String dbName = "semesterProject";
     String user = "root";
-    String password = "iCode0325!";
+    String password = "";
     protected static Connection conn;
     String stmt;
     PreparedStatement statement;
