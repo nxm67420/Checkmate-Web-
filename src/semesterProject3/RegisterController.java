@@ -43,7 +43,7 @@ public class RegisterController {
         }
 
         try {
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/semesterProject", "root", "iCode0325");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/semesterProject", "root", "");
             //Statements
             String sql = "INSERT INTO user(username, first_name, last_name, password, email)" +
                             "VALUES(?,?,?,?,?)";
