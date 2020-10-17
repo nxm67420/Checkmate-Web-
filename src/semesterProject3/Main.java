@@ -89,7 +89,7 @@ public class Main extends Application {
                 System.out.println("Driver loaded");
 
                 //Establish Connection
-                conn = DriverManager.getConnection("jdbc:mysql://localhost/semesterProject", "root", "iCode0325");
+                conn = DriverManager.getConnection("jdbc:mysql://localhost/semesterProject", "root", "");
                 System.out.println("Database connected");
             }
             catch (Exception e){
