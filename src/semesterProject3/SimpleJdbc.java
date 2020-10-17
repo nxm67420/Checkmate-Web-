@@ -14,7 +14,7 @@ public class SimpleJdbc {
 
         // Connect to a database
         Connection connection = DriverManager.getConnection
-                ("jdbc:mysql://localhost/javabook" , "root", "iCode0325");
+                ("jdbc:mysql://localhost/javabook" , "root", "");
         System.out.println("Database connected");
 
         // Create a statement
